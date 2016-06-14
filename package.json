@@ -1,0 +1,21 @@
+{
+  "name": "komponent",
+  "version": "1.0.0",
+  "description": "A TypeScript way of using Knockout components",
+  "main": "dist/komponent.js",
+  "scripts": {
+    "bundle": "rollup dist/komponent.js -o dist/komponent.js -c",
+    "ts": "tsc -p src",
+    "build": "npm run ts && npm run bundle",
+    "postinstall": "npm run build"
+  },
+  "author": "Sergio Morchón Poveda",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-es2015-rollup": "^1.1.1",
+    "rollup": "^0.31.2",
+    "rollup-plugin-babel": "^2.5.1",
+    "rollup-plugin-json": "^2.0.0",
+    "typescript": "^1.8.10"
+  }
+}
